@@ -1,0 +1,25 @@
+body{
+  width: 1080px;
+  margin: auto;
+  /* border: red dotted 2px; */
+}
+tr{
+  height: 350px;
+}
+td{
+  width: 350px;
+  height: 350px;
+  padding: 0;
+    border: red dotted 2px;
+
+}
+td > img{
+  margin: none;
+  width: 300px;
+}
+td > p{
+  overflow: scroll;
+}
+footer{
+  height: 100px;
+}
