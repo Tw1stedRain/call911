@@ -1,0 +1,18 @@
+header{
+  /* margin-top: 100px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100px;
+margin-bottom: 20px;
+
+  border: purple dotted 2px;
+
+}
+
+nav > ul{
+  display: flex;
+  flex-direction: row;
+  
+  border: blue dotted 2px;
+}
