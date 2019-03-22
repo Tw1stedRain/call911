@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Call911 Messaging Center</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/pricing.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+   <h5 class="my-0 mr-md-auto font-weight-normal">Call911.us</h5>
+   <nav class="my-2 my-md-0 mr-md-3">
+     <a class="p-2 text-dark" id="btn-home"      href="#">Home</a>
+     <a class="p-2 text-dark" id="btn-pricing"   href="#">Pricing</a>
+     <a class="p-2 text-dark" id="btn-buy-top"   href="#">Buy</a>
+     <a class="p-2 text-dark" id="btn-logon"     href="#">Log On</a>
+   </nav>
+</div>
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" id="headdiv">
+	<h1>Call911.us Messaging Center</h1>
+
+	<ul class="list-inline">
+  <li class="list-inline-item">Internet Intercom</li>
+  <li class="list-inline-item">Speaker Phone</li>
+  <li class="list-inline-item">Local Phone Number</li>
+  <li class="list-inline-item">Location Accurate 911</li>
+  <li class="list-inline-item">Texting</li>
+  <li class="list-inline-item">eMail</li>
+  <li class="list-inline-item">Internet Radio</li>
+
+  <li class="list-inline-item">Wake by Music</li>
+  <li class="list-inline-item">Wake by Light</li>
+  <li class="list-inline-item">Weather</li>
+  <li class="list-inline-item">Voice Announcements</li>
+  <li class="list-inline-item">Call Button Remote</li>
+  <li class="list-inline-item">First Responder Directives</li>
+  <li class="list-inline-item">Location Verification Map</li>
+</ul>
+
+	<div>
+		<!--   <p class="lead">The New, New Home Phone.</p> -->
+		<div class="card mb-4 box-shadow">
+		       <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+		       <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+		       <span class="wistia_embed wistia_async_n9hnwnhffe popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span>
+		       </div></div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+
+
+
+
+ <section id="profile_section" style="display:none;">
+  <div class="row">
+   <div class="column">
+    <nav>
+     <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Setup</a>
+      <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+     </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+      <form>
+        <div class="form-group">
+            <label for="messagingCenter">Messaging Center</label>
+            <select id="messagingCenter" class="form-control">
+             <option selected>Choose...</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <label for="user_name">User Name</label>
+          <input type="text" class="form-control" id="user_name" placeholder="User Name">
+        </div>
+        <div class="form-group">
+          <label for="user_email" id="signup_email_label">User eMail address</label>
+          <input type="email" class="form-control" id="user_email" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="userAddress1">Messaging Center Address </label>
+          <input type="text" class="form-control" id="userAddress1" placeholder="1234 Main St">
+        </div>
+        <div class="form-group">
+          <label for="userAddress2">Messaging Center Address </label>
+          <input type="text" class="form-control" id="userAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="userCity">City</label>
+            <input type="text" class="form-control" id="userCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="userState">State</label>
+            <select id="userState" class="form-control">
+             <option selected>Choose...</option>
+             <option selected>WA</option>
+             <option>...</option>
+            </select>
+           </div>
+           <div class="form-group col-md-2">
+           <label for="userZip">Zip</label>
+           <input type="text" class="form-control" id="userZip">
+           </div>
+        </div>
+        <input id="userpsk" type="hidden">
+        <button type="button" class="btn btn-primary" id="btn-update-user">Update User</button>
+       </form>
+      </div>
+     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+
+
+
+
+     </div>
+     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+     <form>
+         <div class="form-group">
+          <label for="inputPhoneOrTextName">Name</label>
+          <input type="text" class="form-control" id="inputPhoneOrTextName" placeholder="User Name">
+        </div>
+        <div class="form-group">
+          <label for="inputPhoneOrTextNumber">Phone or Text Number</label>
+          <input type="text" class="form-control" id="inputPhoneOrTextNumber" placeholder="User Name">
+        </div>
+        <div class="form-group">
+          <label for="friend_email" id="signup_email_label">eMail address</label>
+          <input type="email" class="form-control" id="friend_email" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="phoneList">Friends &amp; Family Phone Calling List</label>
+            <select id="phoneList" class="form-control">
+             <option selected>Choose...</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="textList">Friends &amp; Family Text Messaging List</label>
+            <select id="textList" class="form-control">
+             <option selected>Choose...</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="emailList">Friends &amp; Family Phone Emailing List</label>
+            <select id="emailList" class="form-control">
+             <option selected>Choose...</option>
+            </select>
+        </div>
+        <button type="button" class="btn btn-primary" id="btn-add-friend">Add</button>
+       </form>
+
+
+
+</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="login_section" style="display:none;">
+ <form>
+     <div class="form-group">
+       <label for="login_username">User Name</label>
+       <input type="text" class="form-control" id="login_username" placeholder="username">
+     </div>
+     <div class="form-group">
+       <label for="login_password">Password</label>
+       <input type="text" class="form-control" id="login_password" placeholder="password">
+     </div>
+     <button type="button" class="btn btn-primary" id="btn-login">Log In</button>
+  </form>
+</section>
+
+<section id="signup_section" style="display:none;">
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Create Account</h5>
+         <form>
+              <div class="form-group">
+                <label for="signup_name">Name</label>
+                <input type="text" class="form-control" id="signup_name" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <label for="signup_email" id="signup_email_label">eMail address</label>
+                <input type="email" class="form-control" id="signup_email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="signup_password1">Password</label>
+                <input type="password" class="form-control" id="signup_password1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="signup_password2">Again. Just to make sure we got it right!</label>
+                <input type="password" class="form-control" id="signup_password2" placeholder="Password">
+              </div>
+              <button type="button" class="btn btn-primary" id="btn-addaccount">Next</button>
+            </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Progress</h5>
+        <table class="table">
+           	<tr class="table-primary"><td>1</td><td>Create Account</td><td>You Are Here!</td></tr>
+			<tr class="table-secondary"><td>2</td><td>Review Terms &amp; Costs</td><td></td></tr>
+			<tr class="table-secondary"><td>3</td><td>Choose Phone Number</td><td></td></tr>
+			<tr class="table-secondary"><td>4</td><td>Shipping Information</td><td></td></tr>
+			<tr class="table-secondary"><td>5</td><td>Review &amp; Pay</td><td></td></tr>
+			<tr class="table-secondary"><td>6</td><td>Log On To Account</td><td>Before First Use</td></tr>
+			<tr class="table-secondary"><td>7</td><td>Complete User Profile</td><td>Before First Use</td></tr>
+			<tr class="table-secondary"><td>8</td><td>Live Test Drive</td><td>Optional</td></tr>
+         </table>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="order_message_center" style="display:none;">
+<div class="row">
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Cost &amp; Terms</h5>
+	 		<img class="card-img-top" id="item_image"  src="" alt="Card image cap">
+	 		<div class="card-body">
+		    <h5 class="card-title" id="item_name">Card title</h5>
+		    <p class="card-text" id="item_description">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+		    <p class="card-text"><small class="text-muted" id="item_price">Last updated 3 mins ago</small></p>
+		    <button type="button" class="btn btn-primary" id="btn-order">Next</button>
+	 		</div>
+		</div>
+	</div>
+</div>
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Progress</h5>
+        <table class="table">
+           	<tr class="table-success"><td>1</td><td>Create Account</td><td>Completed</td></tr>
+			<tr class="table-primary"><td>2</td><td>Review Terms &amp; Costs</td><td>You Are Here!</td></tr>
+			<tr class="table-secondary"><td>3</td><td>Choose Phone Number</td><td></td></tr>
+			<tr class="table-secondary"><td>4</td><td>Shipping Information</td><td></td></tr>
+			<tr class="table-secondary"><td>5</td><td>Review &amp; Pay</td><td></td></tr>
+				<tr class="table-secondary"><td>6</td><td>Log On To Account</td><td>Before First Use</td></tr>
+			<tr class="table-secondary"><td>7</td><td>Complete User Profile</td><td>Before First Use</td></tr>
+			<tr class="table-secondary"><td>8</td><td>Live Test Drive</td><td>Optional</td></tr>
+         </table>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="shipping_info_section" style="display:none;">
+<div class="row">
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Shipping Information</h5>
+<form>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option selected>WA</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+   <div class="form-group">
+    <label for="inputDelivryInstructions">Additional Delivery Instructions</label>
+    <input type="text" class="form-control" id="inputDeliveryInstructions" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Require Signature
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary" id="btn-submit-address">Next</button>
+</form>
+</div>
+</div>
+</div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Progress</h5>
+        <table class="table">
+           	<tr class="table-success"><td>1</td><td>Create Account</td><td>Completed</td></tr>
+			<tr class="table-success"><td>2</td><td>Review Terms &amp; Costs</td><td>Completed</td></tr>
+			<tr class="table-success"><td>3</td><td>Choose Phone Number</td><td>Completed</td></tr>
+			<tr class="table-primary"><td>4</td><td>Shipping Information</td><td>You Are Here!</td></tr>
+            <tr class="table-secondary"><td>5</td><td>Review &amp; Pay</td><td></td></tr>
+			<tr class="table-secondary"><td>6</td><td>Log On To Account</td><td>Before First Use</td></tr>
+			<tr class="table-secondary"><td>7</td><td>Complete User Profile</td><td>Before First Use</td></tr>
+			<tr class="table-secondary"><td>8</td><td>Live Test Drive</td><td>Optional</td></tr>
+         </table>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+ <section id="number_section" style="display:none;">
+<div class="row">
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+                  <div class="panel panel-primary" id="left_number_panel">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Explore the Possibilties.</h3>
+                  </div>
+                  <div class="panel-body" id="left_numbers_body">
+                    <form>
+                      <div class="pad-ten-px-below">
+                        <div class="input-group" class="pad-ten-px-below">
+                          <span class="input-group-btn" data-search-type="area">
+                            <button class="btn btn-primary" type="button" id="explore_by_ac">Explore</button>
+                          </span>
+                          <input type="text" class="form-control" placeholder="Explore By Area Code." id="ac">
+                        </div>
+                      </div>
+                      <div class="input-group">
+                        <span class="input-group-btn">
+                          <button class="btn btn-primary" type="button" id="explore_by_zip">Explore</button>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Explore By Zip Code." id="zip">
+                      </div>
+                      <h5 id="num_avail_results">
+                        55 Choices in the 206 Area Code! See one you like? Click to choose.
+                      </h5>
+                      <div class="pad-ten-px-below">
+                        <label for="make_it_mine">Current Choice</label>
+                        <div class="input-group pad-10-px-below">
+                          <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button"  id="make_it_mine_button" >Make It Mine!</button>
+                            </span>
+                          <input type="text" class="form-control" id="make_it_mine" aria-describedby="basic-addon3">
+                        </div>
+                      </div>
+                      <div class="scroll" id="numbers_available">
+                        <h5 id="ul_available"></h5>
+                        <ul class="list-group" id="numbers" data-textable="5551312" data-human="dfdf">
+                          <li class="list-group-item" data-number="+12065551212">(206) 555-1212 RICHMOND BEACH
+                            CALIFORNIA
+                          </li>
+                          <li class="list-group-item">Dapibus ac facilisis in</li>
+                          <li class="list-group-item">Morbi leo risus</li>
+                          <li class="list-group-item">Porta ac consectetur ac</li>
+                          <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              </div>
+              </div>
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Progress</h5>
+        <table class="table">
+           	<tr class="table-success"><td>1</td><td>Create Account</td><td>Completed</td></tr>
+			<tr class="table-success"><td>2</td><td>Review Terms &amp; Costs</td><td>Completed</td></tr>
+			<tr class="table-primary"><td>3</td><td>Choose Phone Number</td><td>You Are Here!</td></tr>
+			<tr class="table-secondary"><td>4</td><td>Shipping Information</td><td></td></tr>
+            <tr class="table-secondary"><td>5</td><td>Review &amp; Pay</td><td></td></tr>
+			<tr class="table-secondary"><td>6</td><td>Log On To Account</td><td>Before First Use</td></tr>
+			<tr class="table-secondary"><td>7</td><td>Complete User Profile</td><td>Before First Use</td></tr>
+			<tr class="table-secondary"><td>8</td><td>Live Test Drive</td><td>Optional</td></tr>
+         </table>
+      </div>
+    </div>
+  </div>
+ </div>
+ </section>
+
+ <section id="review_and_pay_section" style="display:none;">
+  <div class="row">
+   <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <div class="panel-heading">
+          <h3 class="panel-title">Confirm and Pay</h3>
+        </div>
+                <div class="panel-body" id="left_pay_body">
+                  <div id="confirm_div" class="" >
+                      <form>
+                      <h5>Did we get it right?</h5>
+
+                      <address>
+                        <strong><span id="name">David Carlin</span></strong><br>
+                        <abbr title="textable">Textable: </abbr><span id="textable"> 555 555-1212 </span><br>
+                      </address>
+
+                      <address>
+                        <strong>Log In eMail Address</strong><br>
+                        <span id="email">joe@jomama.com</span><br>
+                      </address>
+
+                 <!-- <button type="button" class="btn btn-primary" id="sign_me_up_btn">Looks Good. Lets keep going!</button> -->
+                      </form>
+                  </div>
+                  <div id="stripe_div">
+					<form action="your-server-side-code" method="POST">
+					  <script
+					    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+					    data-key="pk_test_kC6xq8S6kBJg91tMjVsuHQSh"
+					    data-amount="999"
+					    data-name="Call911.us"
+					    data-description="Example charge"
+					    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+					    data-locale="auto">
+					  </script>
+					</form>
+				 </div>
+                 <div id="pay_div" style="display:none;">
+                    <h4 id="well_done">Well Done!</h4>
+                    <p> Please activate your account using either the PayPal or Amazon button below.</p>
+                    <p id="fine_print" class="">The cost for unlimited texting is $5.00 per month. You will have full
+                      use of your account immediately after completing the payment process.
+                      Additional months can be paid at any time by logging on to Tablet Texting and going to the Account
+                      section.</p>
+                    <h4>Credit, Debit or PayPal</h4>
+                    <div id="paypaldiv" class="">
+                      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="custom" value="123">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="34B6W2WH58P54">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                      </form>
+
+                    </div>
+                    <div id="payamazondiv" class="">
+                      <h1>Or</h1>
+                      <h4>Pay With Amazon</h4>
+                      <div id="AmazonPayButton"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+
+    <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Progress</h5>
+        <table class="table">
+           	<tr class="table-success"><td>1</td><td>Create Account</td><td>Completed</td></tr>
+			<tr class="table-success"><td>2</td><td>Review Terms &amp; Costs</td><td>Completed</td></tr>
+			<tr class="table-success"><td>3</td><td>Choose Phone Number</td><td>Completed</td></tr>
+			<tr class="table-success"><td>4</td><td>Shipping Information</td><td>Completed</td></tr>
+            <tr class="table-primary"><td>5</td><td>Review &amp; Pay</td><td>You Are Here!</td></tr>
+			<tr class="table-secondary"><td>6</td><td>Log On To Account</td><td>Before First Use</td></tr>
+			<tr class="table-secondary"><td>7</td><td>Complete User Profile</td><td>Before First Use</td></tr>
+			<tr class="table-secondary"><td>8</td><td>Live Test Drive</td><td>Optional</td></tr>
+         </table>
+      </div>
+    </div>
+  </div>
+ </div>
+</section>
+<section id="mainbody">
+ <div class="row" >
+  <div class="col">
+   <h4>A Brief History of Telephones and Telephone Calls</h4>
+  </div>
+ </div>
+ <div class="row">
+ <div class="card-deck mb-3 text-center" >
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h5 class="my-0 font-weight-normal">The Home Phone</h5>
+          </div>
+          <img src="img/AdobeStock_133411839_Preview.jpeg" class="img-fluid" alt="Responsive image">
+          <div class="card-body" style="text-align: left;">
+            <p style="display:none;">Always on. Always in the same place. Pick up the handset. <a href="#" id="homePhoneMoreLink">Dial.</a></p>
+            <div  id="homePhoneMoreContent" style="display:none;">
+            <p>When the phone company connects a call made from your home phone to 911 they instantly provide the 911 center with your complete address.</p>
+            <p>This is how the 911 system was designed. The carrier is obligated to supply your location directly from the phone installation records. In most areas an emergency
+            response will be sent to that address, even if you are unable to speak.</p>
+          </div>
+          <div style="display:block;">
+          <p>Always on. Always in the same place. Pick up the handset. Dial. Talk.</p>
+            <p>And when it is a 911 call the phone company automatically provides the 911 center with your complete address.</p>
+            <p>This is how the 911 system was designed. The carrier is obligated to supply your location directly from their phone installation records. </p>
+            <p>The 911 operator has your address on their computer screen the moment
+            they answer your call. In most areas an emergency
+            response will be sent to that address, even if you are unable to speak.</p>
+          </div>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h5 class="my-0 font-weight-normal">The New Home Phone</h5>
+          </div>
+          <img src="img/AdobeStock_177758774_Preview.jpeg" class="img-fluid" alt="Responsive image">
+           <div class="card-body" style="text-align: left;">
+            <p  style="display:none;">Not always charged. Not always in the same place. Find it. <a id="cellPhoneMoreLink" href="#">Then...</a></p>
+            <div id="cellPhoneMoreContent1" style="display:none;">
+            <p>Turn it on or wake it up from sleep mode. Is it really 3:10 AM? Put in your PIN. Oops did you tap the 4 instead of the five? Do you have service? Dial.
+            Can they hear you? No? Go stand by the window.</p>
+            <p>And if the call is to 911, be prepared to verbally give the operator your precise location because they will not have it. The location information the 911 center receives from the
+            cell phone carrier is non-dispatchable. In many cases the location provided with a cellular call is not accurate enough to get your call to the right 911 center - even if you are calling from the middle of your living room.
+            <p>Five seconds after you pick up your smart phone to make the call, FaceBook will be advising your entire friends list that you are awake and might
+            want to party. Google will be sending you notifications of nearby all-night restaurants and offering directions from your front door. Google and FaceBook know exactly where you are. The 911 center does not. The 911 operator will be asking you to stay and could you please spell your street name
+            </p>
+        </div>
+        <div id="cellPhoneMoreContent" style="display:block;">
+            <p>Not always charged. Not always in the same place. Find it. Turn it on or wake it up from sleep mode. Is it really 3:10 AM? Put in your PIN. Oops did you tap the 4 instead of the 5? Tap in the number.
+            Tap the call button. Did it go through? Do you have service?
+            Can they hear you? No? Try standing by the window.</p>
+            <p>And if the call is to 911, be prepared to verbally give the operator your precise location because they will not have it. </p>
+            <p>The location information the 911 center receives from the
+            cell phone carrier is not an address to which they can dispatch help. It is a rough approximation and sometimes not sufficiently accurate to direct your call to the correct 911 center - even if you are calling from the middle of your living room.</p>
+            <p>Five seconds after you pick up your smart phone to make the call, FaceBook will be sending updates to your entire friends list letting them know you are awake and might
+            want to party. <p>Google will be sending you notifications of nearby all-night restaurants and offering directions from your front door.</p> <p>Google and FaceBook know
+            exactly where you are. When you call 911 with a cell phone, the 911 center does not. The 911 operator will be urging you to stay calm and would you please spell the name of your street.
+            </p>
+        </div>
+        </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h5 class="my-0 font-weight-normal">The New, New Home Phone</h5>
+          </div>
+          <img src="img/imageedit_2_2061229549.jpg" class="img-fluid" alt="Responsive image">
+
+          <div class="card-body" style="text-align: left;">
+          <p>Always on. Always in the same place. Push the button to start a call. Talk.</p>
+
+  <p> A Call911 Messaging Center with a five dollar monthly subscription and a WiFi connection provides the reliable calling and accurate emergency response location of a true home phone along with:</p>
+  <ul>
+  <li>One Button Calls</li>
+  <li>Hands Free Conversations</li>
+  <li>Bluetooth Remote Button</li>
+  <li>A Local Phone Number</li>
+  <li>Mobile Phone Texting</li>
+  <li>eMail</li>
+  <li>Music and NPR</li>
+  <li>Clock, Alarm and Calendar</li>
+  <li>7 Day Weather</li>
+  <li>First Responder Directives</li>
+  <li>Location Verification Map</li>
+  </ul>
+  <p>
+  Most importantly, when the red button is pressed, the Call911 Messaging Center calls the correct 911 response center and instantly provides complete and accurate location information. It can also
+  automatically send text messages to a list of friends and family letting them know you need help.
+ </p>
+
+            <button type="button" class="btn btn-lg btn-block btn-primary" id="btn-buy">Buy</button>
+          </div>
+        </div>
+ </div>
+ </div>
+</section>
+      <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img class="mb-2" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+            <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Cool stuff</a></li>
+              <li><a class="text-muted" href="#">Random feature</a></li>
+              <li><a class="text-muted" href="#">Team feature</a></li>
+              <li><a class="text-muted" href="#">Stuff for developers</a></li>
+              <li><a class="text-muted" href="#">Another one</a></li>
+              <li><a class="text-muted" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Resource</a></li>
+              <li><a class="text-muted" href="#">Resource name</a></li>
+              <li><a class="text-muted" href="#">Another resource</a></li>
+              <li><a class="text-muted" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Team</a></li>
+              <li><a class="text-muted" href="#">Locations</a></li>
+              <li><a class="text-muted" href="#">Privacy</a></li>
+              <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://localhost:8081/socket.io/socket.io.js"></script>
+    <script src="js/call911website.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.6/holder.min.js"></script>
+    <script src="https://fast.wistia.com/embed/medias/n9hnwnhffe.jsonp" async></script>
+    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+  </body>
+</html>
